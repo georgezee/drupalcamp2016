@@ -1,4 +1,4 @@
-![Docker logo](https://raw.githubusercontent.com/theodorosploumis/drupalcamp2016/gh-pages/img/docker_logo.png)
+![Docker logo](./img/docker_logo.png)
 
 ## Using Docker with Drupal - Introduction
 
@@ -25,19 +25,19 @@ ________________________
 
 ### Docker vs VMs
 
-![Docker vs traditional Virtualization](https://raw.githubusercontent.com/theodorosploumis/drupalcamp2016/gh-pages/img/vm_vs_containers.png)
+![Docker vs traditional Virtualization](./img/vm_vs_containers.png)
 
 ---
 
 ### From Monolithic apps
 
-![Monolithic Architecture](https://raw.githubusercontent.com/theodorosploumis/drupalcamp2016/gh-pages/img/monolithic.png)
+![Monolithic Architecture](./img/monolithic.png)
 
 ---
 
 ### To Containerized apps
 
-![Containerized Architecture](https://raw.githubusercontent.com/theodorosploumis/drupalcamp2016/gh-pages/img/containerized.png)
+![Containerized Architecture](./img/containerized.png)
 
 ---
 
@@ -326,9 +326,9 @@ There are known best practices (see a list at [examples/tips](https://github.com
 
 ### Questions?
 
-![Drupal over Docker!](https://raw.githubusercontent.com/theodorosploumis/drupalcamp2016/gh-pages/img/dcamp_docker.png)
+![Drupalcamp Cape Town!](./img/dcamp_capetown.png)
+![Drupal over Docker!](./img/dcamp_docker.png)
 
-$this->send('[feedback](https://goo.gl/xa3moy)');
 ______________
 
 ###### Tools used: [oh my zsh](http://ohmyz.sh/) / [reveal.js](https://github.com/hakimel/reveal.js) / [Simple Docker UI for Chrome](https://github.com/felixgborrego/docker-ui-chrome-app) / [docker compose 1.7.1](https://github.com/docker/compose/releases/tag/1.7.1) / [docker 1.11.1](https://github.com/docker/docker/releases/tag/v1.11.1)
