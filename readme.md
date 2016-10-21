@@ -19,7 +19,7 @@ ________________________
 
 ### What is Docker
 
-> Docker is an open platform for developing, shipping, and running applications.
+> Docker is an open platform that automates the deployment of applications in software containers.
 
 ---
 
