@@ -91,53 +91,6 @@ ________________________
 
 ---
 
-### Basic Docker (v 1.11) components
-
- - client
- - daemon
- - engine
- - compose
- - distribution (ex registry)
-
----
-
-### Docker client
-
-> It is the primary user interface to Docker. It accepts commands from the user
-and communicates back and forth with a Docker daemon.
-
----
-
-### Docker daemon
-
-> It runs on a host machine. The user does not directly interact with the daemon,
-but instead through the Docker client with the RESTful api or sockets.
-
----
-
-### Docker compose
-
-![Docker compose logo](https://raw.githubusercontent.com/theodorosploumis/drupalcamp2016/gh-pages/img/docker_compose.png)
-
-> A tool for defining and running complex applications with Docker
-(eg a multi-container application) with a single file.
-
----
-
-### Docker engine
-
-> A Client with a Daemon as also as the docker-compose tool. Usually referred simply as "docker".
-
----
-
-### Docker distribution (registry)
-
-![Docker distribution logo](https://raw.githubusercontent.com/theodorosploumis/drupalcamp2016/gh-pages/img/docker_distribution.png)
-
-> A (hosted) service containing repositories of images which responds to the Registry API.
-
----
-
 ### The Docker architecture
 
 ![Docker architecture](https://docs.docker.com/engine/article-img/architecture.svg)
