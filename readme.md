@@ -46,9 +46,8 @@ ________________________
  - [Solomon Hykes](https://twitter.com/solomonstre)
  - dotCloud (now Docker Inc)
  - March 2013
- - 32k stars on [Github](https://github.com/docker/docker/)
- - 260k public repositories on [hub.docker.com](https://hub.docker.com)
- - Docker Inc acquires everyone...
+ - 36k stars on [Github](https://github.com/docker/docker/)
+ - 450k public repositories on [hub.docker.com](https://hub.docker.com)
 
 ---
 
