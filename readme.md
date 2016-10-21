@@ -98,6 +98,18 @@ ________________________
 
 ---
 
+### [Setup Options for Docker Engine](https://docs.docker.com/engine/installation/)
+
+- Linux
+- Docker for Mac*
+######[*File system performance issues.](https://forums.docker.com/t/file-access-in-mounted-volumes-extremely-slow-cpu-bound/8076)
+- Docker for Windows*
+######[*Requires Hyper-V, Windows 10 Pro/Enterprise/Education](https://docs.docker.com/docker-for-windows/#/what-to-know-before-you-install)
+
+- Alternative: VM + Docker
+
+---
+
 ### Steps of a Docker workflow
 
 ```
@@ -168,7 +180,6 @@ docker rm [CONTAINER]
 - [Linked](https://docs.docker.com/engine/userguide/networking/default_network/dockerlinks/) containers
 - Docker [Volume](https://docs.docker.com/engine/userguide/containers/dockervolumes/)
 - Using [docker-compose](https://docs.docker.com/compose/)
-- Advanced usage of docker-compose
 
 ---
 
@@ -260,37 +271,6 @@ docker-compose up -d
 
 ---
 
-### Example: More advanced docker-compose
-
-[Drupal + friends](https://github.com/theodorosploumis/drupal-docker) together.
-
-```
-cd ~/drupalcamp2016
-git clone git@github.com:theodorosploumis/drupal-docker.git
-cd ~/drupalcamp2016/drupal-docker
-
-docker-compose up -d
-
-// Open http://localhost:8081 (web)
-// Open http://localhost:8090 (phpmyadmin)
-
-// Prepare Drupal for installation
-docker exec drupal_8081 bash /scripts/prepare-install.sh
-
-// Install with Drush
-docker exec drupal_8081 /drush/drush \
-    site-install -y standard \
-    --site-name="Drupal 8 with Docker - Drush" \
-    --db-url=mysql://drupal:drupal@mysql/drupal \
-    --site-mail=admin@example.com \
-    --account-name=admin \
-    --account-pass=admin \
-    --account-mail=admin@example.com
-
-```
-
----
-
 ### Docker tips
 
 There are known best practices (see a list at [examples/tips](https://github.com/theodorosploumis/drupal-presentation/tree/gh-pages/examples/tips))
@@ -321,6 +301,7 @@ There are known best practices (see a list at [examples/tips](https://github.com
  - Books: [Docker in Practice](https://www.manning.com/books/docker-in-practice), [The Docker Book](http://www.dockerbook.com/)
  - Tools: [terra](http://terra.readthedocs.io/) / [drude](https://github.com/blinkreaction/drude) / [dropdock](http://dropdock.io/), [kalabox](https://github.com/kalabox/kalabox) / [bowline](https://github.com/davenuman/bowline) / [webfactory](https://github.com/Boran/webfact) / [DockerDrupal](https://www.4alldigital.io/docker-drupal) / [drocker](https://github.com/gabesullice/drocker)
  - Community: [Dockerized Drupal](https://dockerizedrupal.com) / [D.O. Docker group](https://groups.drupal.org/docker) / [D.O. drupalci_testbot](https://www.drupal.org/project/drupalci_testbot)
+ - Case Study: [Amazee.io docs](https://docs.amazee.io/)
 
 ---
 
