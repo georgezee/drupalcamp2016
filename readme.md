@@ -54,7 +54,6 @@ ________________________
 ### Docker Benefits
 
  - Fast
- - Secure
  - Lightweight
  - Open Source
  - Portable
