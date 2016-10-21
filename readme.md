@@ -186,8 +186,8 @@ docker run -it --name ubuntu_example ubuntu /bin/bash
 Let's create a [Drupal app](https://hub.docker.com/_/drupal/) (apache, php, mysql, drupal)
 
 ```
-docker pull drupal:8.1.2-apache
-docker pull mysql:5.5
+docker pull drupal:8.2.1-apache
+docker pull mysql:5.6
 
 // Start a container for mysql
 docker run --name mysql_container \
@@ -195,14 +195,14 @@ docker run --name mysql_container \
            -e MYSQL_DATABASE=drupal \
            -e MYSQL_USER=drupal \
            -e MYSQL_PASSWORD=drupal \
-           -d mysql:5.5
+           -d mysql:5.6
 
 // Start a Drupal container and link it with mysql
 // Usage: --link [name or id]:alias
 docker run -d --name drupal_with_mysql \
            -p 8280:80 \
            --link mysql_container:mysql \
-           drupal:8.1.2-apache
+           drupal:8.2.1-apache
 
 // Open http://localhost:8280 to continue with the installation
 // On the db host use: mysql
@@ -219,8 +219,8 @@ Let's mount local files to a docker container
 
 ```
 cd ~/drupalcamp2016
-drush dl drupal-8.1.2
-cd ~/drupalcamp2016/drupal-8.1.2
+drush dl drupal-8.2.1
+cd ~/drupalcamp2016/drupal-8.2.1
 
 // Start a container for mysql
 docker run --name mysql_container \
@@ -228,7 +228,7 @@ docker run --name mysql_container \
            -e MYSQL_DATABASE=drupal \
            -e MYSQL_USER=drupal \
            -e MYSQL_PASSWORD=drupal \
-           -d mysql:5.5
+           -d mysql:5.6
 
 // Start drupal container with volume
 // Folder "modules" locally is mounted to the container
@@ -236,7 +236,7 @@ docker run -d --name drupal_with_mysql_volumed \
            -p 8290:80 \
            --link mysql_container:mysql \
            -v $(pwd)/modules:/var/www/html/modules \
-           drupal:8.1.2-apache
+           drupal:8.2.1-apache
 
 drush dl devel
 // Devel module is available on the container
