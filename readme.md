@@ -2,9 +2,13 @@
 
 ## Using Docker with Drupal - Introduction
 
-#### [DrupalCamp 2016](http://www.drupal-camp.gr), 1-3 July 2016
+#### [DrupalCamp Cape Town](http://capetown2016.drupalcamp.co.za), 21 October 2016
 
+###### George Ziady / george@springfisher.com
+###### ---
+###### credit to:
 ###### [TheodorosPloumis.com](http://www.theodorosploumis.com/en) / [@theoploumis](http://twitter.com/theoploumis)
+###### [DrupalCamp Greece 2016](http://www.drupal-camp.gr), 1-3 July 2016
 ________________________
 
 ###### Get them: [online presentation](http://theodorosploumis.github.io/drupalcamp2016/) / [source code](https://github.com/theodorosploumis/drupalcamp2016) / [docker image](https://hub.docker.com/r/tplcom/drupalcamp2016/)
